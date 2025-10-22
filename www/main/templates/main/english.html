@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polyglot — Языковая онлайн-школа</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li class="active"><a href="mainpage.html">Главная</a></li>
+          <li><a href="about.html">О платформе</a></li>
+          <li><a href="all-courses.html">Курсы</a></li>
+          <li><a href="support.html">Поддержка</a></li>
+          <li><a href="profile.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="icon-user">
+          <a href="registration.html">  
+            <img src="../img/person.svg" alt="iconperson">
+          </a>
+        </div>
+        <div class="lang-switcher">
+          <span class="lang-option" id="current-lang">RU</span>  
+          <img src="../img/arrow-down.svg" alt="Стрелка" class="arrow-icon" id="toggle-options">
+          <div class="lang-options" id="lang-options">  
+            <span class="lang-option" data-lang="ru">RU</span>  
+            <span class="lang-option" data-lang="en">EN</span>  
+          </div> 
+        </div>
+        <script src="header.js"></script> 
+      </div>
+      <div class="burger" id="burger">
+        <img src="../img/burger.svg" alt="Меню">
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burger = document.getElementById('burger');
+          const nav = document.getElementById('main-nav');
+      
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+          });
+        });
+      </script>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="banner-left">
+      <div class="title-banner">Язык – ключ к новым возможностям. <br> Начните учиться сегодня!</div>
+      <button type="button" name="button-banner" class="button-banner">
+        <div class="btn-text">Записаться</div>
+        <img src="../img/icon-button.svg" alt="icon-button" width="16" height="27">
+      </button>
+      </div>
+    <div class="banner-right">
+      <img src="../img/banner-right.svg" alt="icon-button">
+    </div>
+  </div>
+
+
+  <div class="english-courses">
+    <div class="english-courses-title">Выберите курс</div>
+    <div class="english-courses-cards">
+      <div class="english-courses-card">
+        <div class="card-image"><img src="../img/eng1.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Общий английский (Начальный)</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 72</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики : 44.5к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> A1-А2</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                </button>  
+            </div> 
+      </div>
+      <div class="english-courses-card">
+        <div class="card-image"><img src="../img/eng2.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Общий английский (Средний)</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 112</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 19к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> В1-В2</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                </button>  
+            </div> 
+      </div>
+      <div class="english-courses-card">
+        <div class="card-image"><img src="../img/eng3.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Общий английский (Продвинутый)</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 92</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 27.8к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> С1-С2</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                </button>  
+            </div> 
+      </div>
+    </div>
+
+    <div class="english-courses-cards">
+      <div class="english-courses-card">
+        <div class="card-image"><img src="../img/eng4.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Учимся читать</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 2</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 4.1к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> A1-А2</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                </button>  
+            </div> 
+      </div>
+      <div class="english-courses-card">
+        <div class="card-image"><img src="../img/eng5.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Подготовка к TOEFL</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 120</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 19к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> В1-В2</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                </button>  
+            </div> 
+      </div>
+      <div class="english-courses-card">
+        <div class="card-image"><img src="../img/eng6.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Подготовка к IELTS</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 120</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 17.8к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> В1-В2</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                </button>  
+            </div> 
+      </div>
+    </div>
+
+    <div class="english-courses-cards">
+      <div class="english-courses-card">
+        <div class="card-image"><img src="../img/eng7.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Travel английский</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 42</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 34.9к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> A1-А2</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                </button>  
+            </div> 
+      </div>
+      <div class="english-courses-card">
+        <div class="card-image"><img src="../img/eng8.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Подготовка к университету</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 72</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 7к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> В1-В2</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                </button>  
+            </div> 
+      </div>
+      <div class="english-courses-card">
+        <div class="card-image"><img src="../img/eng9.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Бизнес английский</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 92</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 10.3к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> С1-С2</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                </button>  
+            </div> 
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="footer">
+    <div class="column1">
+      <div class="footer-title1">Языковая школа “POLYGLOT”</div>
+      <div class="footer-text1">
+        Мы — команда профессиональных преподавателей, которая поможет вам овладеть иностранным языком в комфортной и дружелюбной атмосфере. Наша школа предлагает индивидуальные и групповые занятия для студентов всех уровней.
+      </div>
+      <div class="social">
+        <div class="email-num">polyglot@gmail.com</div>
+        <div class="email-num">+7 (800) 555 35 35</div>
+      </div>
+      <div class="social-img">
+        <img src="../img/sn1.svg" alt="telegram">
+        <img src="../img/sn2.svg" alt="vk">
+        <img src="../img/sn3.svg" alt="pint">
+        <img src="../img/sn4.svg" alt="skype">
+      </div>
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Курсы</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для детей</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для подростков</div>  
+        </div>  
+        <div class="footer-item active">  
+            <img src="../img/footer-icon-orange.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Смешанные группы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для взрослых</div>  
+        </div>  
+    </div>  
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Важная информация</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Часто задаваемые вопросы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Поддержка</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вебинары</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вакансии</div>  
+        </div>  
+    </div>  
+    </div>
+    
+  </div>
+
+ 
+      
+
+</body>
+</html>

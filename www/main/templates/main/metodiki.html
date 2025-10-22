@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polyglot — Языковая онлайн-школа</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li class="active"><a href="mainpage.html">Главная</a></li>
+          <li><a href="about.html">О платформе</a></li>
+          <li><a href="all-courses.html">Курсы</a></li>
+          <li><a href="support.html">Поддержка</a></li>
+          <li><a href="profile.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="icon-user">
+          <a href="registration.html">  
+            <img src="../img/person.svg" alt="iconperson">
+          </a>
+        </div>
+        <div class="lang-switcher">
+          <span class="lang-option" id="current-lang">RU</span>  
+          <img src="../img/arrow-down.svg" alt="Стрелка" class="arrow-icon" id="toggle-options">
+          <div class="lang-options" id="lang-options">  
+            <span class="lang-option" data-lang="ru">RU</span>  
+            <span class="lang-option" data-lang="en">EN</span>  
+          </div> 
+        </div>
+        <script src="header.js"></script> 
+      </div>
+      <div class="burger" id="burger">
+        <img src="../img/burger.svg" alt="Меню">
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burger = document.getElementById('burger');
+          const nav = document.getElementById('main-nav');
+      
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+          });
+        });
+      </script>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="banner-left">
+      <div class="title-banner">Язык – ключ к новым возможностям. <br> Начните учиться сегодня!</div>
+      <button type="button" name="button-banner" class="button-banner">
+        <div class="btn-text">Записаться</div>
+        <img src="../img/icon-button.svg" alt="icon-button" width="16" height="27">
+      </button>
+      </div>
+    <div class="banner-right">
+      <img src="../img/banner-right.svg" alt="icon-button">
+    </div>
+  </div>
+
+  <div class="metodiki-page">
+    <div class="metodiki-page-title">Методики обучения</div>
+    <div class="metodiki-page-l-r">
+      <div class="metodiki-page-left">
+        <div class="metodiki-page-text">
+          <div class="metodiki-page-texts">
+            <span class="main28">
+            1. Коммуникативная методика<br>
+            </span>
+            <span class="main1">
+            Основное внимание уделяется практическому использованию языка через диалоги и ролевые игры. Эта методика помогает развивать навыки общения и уверенности в разговорной практике. Учащиеся учатся взаимодействовать в реальных ситуациях, что делает изучение языка более естественным и актуальным.<br>
+            </span>
+            <span class="main28">
+            2. Правильный подход<br>
+            </span>
+            <span class="main1">
+            Обучение грамматике и лексике происходит в контексте, а не изолированно. Использование текстов и видео делает процесс обучения более интерактивным и увлекательным, позволяя ученикам понимать языковые конструкции в реальных примерах.<br>
+            </span>
+            <span class="main28">
+            3. Интерактивное обучение<br>
+            </span>
+            <span class="main1">
+            Эта методика включает технологии и онлайн-платформы, где классы могут быть организованы с элементами геймификации  и видеозвонков. Это позволяет учащимся учиться в удобном для них темпе и формате, повышая их вовлеченность и интерес 
+                к изучению языка.<br>
+            </span>
+          </div>
+        </div>
+        </div>
+      <div class="metodiki-page-right">
+        <img src="../img/about-left.svg"/>
+      </div>
+    </div>  
+    <div class="metodiki-page-down">
+      <div class="metodiki-page-down-left">
+        <img src="../img/metodiki-page.svg"/>
+      </div>
+      <div class="metodiki-page-down-right">
+        <div class="metodiki-page-down-text">
+          <div class="metodiki-page-down-texts">
+            <span class="main28">
+                4. Полное погружение<br>
+                </span>
+                <span class="main1">
+                    Создание языковой среды через культуру и обычаи носителей языка. Включение экскурсий и культурных мероприятий помогает учащимся глубже понять язык и его контекст, что способствует лучшему усвоению и более быстрому освоению языка.<br>
+                </span>
+                <span class="main28">
+                    5. Индивидуальный подход<br>
+                </span>
+                <span class="main1">
+                    Каждый ученик получает адаптированную программу, учитывающую его потребности и цели. Это позволяет максимально эффективно достигать результатов, так как обучение строится на основе личной мотивации и интересов обучающегося.<br>
+                </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-examples">
+    <h2>Примеры уроков</h2>
+    <div class="cards-container">
+      <div class="lesson-card">
+        <h3>Коммуникативная методика</h3>
+        <p>
+          Пример урока:<br>
+          – Тема: Заказ еды в ресторане<br>
+          – Цель: Развить навыки общения в ресторанной среде.<br>
+          – Этапы:<br>
+          1. Введение: Обсуждение видов блюд и вежливых фраз для заказа.<br>
+          2. Практика: Студенты разбиваются на пары; один — официант, другой — клиент.<br>
+          3. Ролевая игра:  Каждая пара разыгрывает сцену заказа, после чего меняются ролями.<br>
+          4. Обратная связь: Группа обсуждает урок и делится впечатлениями.
+        </p>
+      </div>
+
+      <div class="lesson-card">
+        <h3>Правильный подход</h3>
+        <p>
+          Пример урока:<br>
+          – Тема: События в новостях<br>
+          – Цель: Усвоение новых слов и грамматических структур.<br>
+          – Этапы:<br>
+          1. Чтение/Просмотр: Студенты читают текст с новостями или смотрят короткое видео.<br>
+          2. Обсуждение: Обсуждение содержания, новые слова записываются на доске.<br>
+          3. Грамматика в контексте: Анализируются грамматические конструкции, использованные в тексте.<br>
+          4. Практика: Учащиеся пишут короткие сообщения о текущих событиях, используя новые слова.
+        </p>
+      </div>
+
+      <div class="lesson-card">
+        <h3>Интерактивное обучение</h3>
+        <p>
+          Пример урока:<br>
+          – Тема: Шопинг<br>
+          – Цель: Научиться использовать язык в контексте покупок.<br>
+          – Этапы:<br>
+          1. Онлайн-игра: Студенты участвуют в игре, где они "покупают" виртуальные товары на платформе.<br>
+          2. Групповая работа: Студенты работают в группах и обсуждают, что они купили, используя целевые фразы.<br>
+          3. Видеозвонок: Проведение видеозвонка с носителем языка, который делится своим опытом шопинга. <br>
+          4. Обратная связь: Студенты делятся своим опытом и задают вопросы.
+        </p>
+      </div>
+
+      <div class="lesson-card">
+        <h3>Полное погружение</h3>
+        <p>
+          Пример урока:<br>
+          – Тема: Традиционные праздники<br>
+          – Цель: Изучить культурные аспекты<br>
+          – Этапы:<br>
+          1. Экскурсия: Посещение культурного мероприятия (например, фестиваль).<br>
+          2. Дискуссия: Обсуждение увиденного и услышанного в классе, использование новых слов.<br>
+          3. Проект: Создание групповых постеров о разных праздниках.<br>
+          4. Презентация: Каждая группа представляет свой проект на английском языке, обсуждая, что они узнали.
+        </p>
+      </div>
+
+      <div class="lesson-card">
+        <h3>Индивидуальный подход</h3>
+        <p>
+          Пример урока:<br>
+          – Тема: Повышение уверенности в разговоре<br>
+          – Цель: Устойчивое развитие навыков общения.<br>
+          – Этапы:<br>
+          1. Опрос: Учитель проводит индивидуальный опрос о слабостях и целях ученика.<br>
+          2. Практика: Каждому ученику предоставляется индивидуальное задание, например, подготовка к разговору о любимом хобби.<br>
+          3. Обсуждение: Каждый ученик по очереди рассказывает о своем хобби, остальные задают вопросы.<br>
+          4. Обратная связь: Наставления и рекомендации для дальнейшего развития.
+
+        </p>
+      </div>
+
+      <div class="lesson-image">
+        <img src="../img/lesson-examples.svg" alt="Изображение студентов" />
+      </div>
+  
+    </div>
+</div>
+
+  <div class="footer">
+    <div class="column1">
+      <div class="footer-title1">Языковая школа “POLYGLOT”</div>
+      <div class="footer-text1">
+        Мы — команда профессиональных преподавателей, которая поможет вам овладеть иностранным языком в комфортной и дружелюбной атмосфере. Наша школа предлагает индивидуальные и групповые занятия для студентов всех уровней.
+      </div>
+      <div class="social">
+        <div class="email-num">polyglot@gmail.com</div>
+        <div class="email-num">+7 (800) 555 35 35</div>
+      </div>
+      <div class="social-img">
+        <img src="../img/sn1.svg" alt="telegram">
+        <img src="../img/sn2.svg" alt="vk">
+        <img src="../img/sn3.svg" alt="pint">
+        <img src="../img/sn4.svg" alt="skype">
+      </div>
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Курсы</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для детей</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для подростков</div>  
+        </div>  
+        <div class="footer-item active">  
+            <img src="../img/footer-icon-orange.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Смешанные группы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для взрослых</div>  
+        </div>  
+    </div>  
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Важная информация</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Часто задаваемые вопросы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Поддержка</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вебинары</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вакансии</div>  
+        </div>  
+    </div>  
+    </div>
+    
+  </div>
+
+ 
+      
+
+</body>
+</html>

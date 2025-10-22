@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polyglot — Языковая онлайн-школа</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li class="active"><a href="mainpage.html">Главная</a></li>
+          <li><a href="about.html">О платформе</a></li>
+          <li><a href="all-courses.html">Курсы</a></li>
+          <li><a href="support.html">Поддержка</a></li>
+          <li><a href="profile.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="icon-user">
+          <a href="registration.html">  
+            <img src="../img/person.svg" alt="iconperson">
+          </a>
+        </div>
+        <div class="lang-switcher">
+          <span class="lang-option" id="current-lang">RU</span>  
+          <img src="../img/arrow-down.svg" alt="Стрелка" class="arrow-icon" id="toggle-options">
+          <div class="lang-options" id="lang-options">  
+            <span class="lang-option" data-lang="ru">RU</span>  
+            <span class="lang-option" data-lang="en">EN</span>  
+          </div> 
+        </div>
+        <script src="header.js"></script> 
+      </div>
+      <div class="burger" id="burger">
+        <img src="../img/burger.svg" alt="Меню">
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burger = document.getElementById('burger');
+          const nav = document.getElementById('main-nav');
+      
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+          });
+        });
+      </script>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="banner-left">
+      <div class="title-banner">Язык – ключ к новым возможностям. <br> Начните учиться сегодня!</div>
+      <button type="button" name="button-banner" class="button-banner">
+        <div class="btn-text">Записаться</div>
+        <img src="../img/icon-button.svg" alt="icon-button" width="16" height="27">
+      </button>
+      </div>
+    <div class="banner-right">
+      <img src="../img/banner-right.svg" alt="icon-button">
+    </div>
+  </div>
+
+
+  <div class="all-courses">
+    <div class="all-courses-title">Выберите язык</div>
+    <div class="all-courses-cards">
+        <a href="english.html" class="all-courses-card-link">
+            <div class="all-courses-card">
+                <div class="card-image"><img src="../img/l1.svg"/></div>
+                    <div class="card-info">  
+                        <h3 class="card-title">Английский</h3>  
+                        <div class="all-courses-card-details">    
+                            <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Уже изучают: 143.113</div>
+                        </div>   
+                    </div> 
+              </div>
+        </a>
+      
+      <div class="all-courses-card">
+        <div class="card-image"><img src="../img/l2.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Немецкий</h3>  
+                <div class="all-courses-card-details">    
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Уже изучают : 75.856</div>
+                </div>   
+            </div> 
+      </div>
+      <div class="all-courses-card">
+        <div class="card-image"><img src="../img/l3.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Испанский</h3>  
+                <div class="all-courses-card-details">    
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Уже изучают : 103.913</div>
+                </div>   
+            </div> 
+      </div>
+    </div>
+    <div class="all-courses-cards">
+        <div class="all-courses-card">
+          <div class="card-image"><img src="../img/l4.svg"/></div>
+              <div class="card-info">  
+                  <h3 class="card-title">Французский</h3>  
+                  <div class="all-courses-card-details">    
+                      <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Уже изучают : 75.022</div>
+                  </div>   
+              </div> 
+        </div>
+        <div class="all-courses-card">
+          <div class="card-image"><img src="../img/l5.svg"/></div>
+              <div class="card-info">  
+                  <h3 class="card-title">Португальский</h3>  
+                  <div class="all-courses-card-details">    
+                      <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Уже изучают : 14.256</div>
+                  </div>   
+              </div> 
+        </div>
+        <div class="all-courses-card">
+          <div class="card-image"><img src="../img/l6.svg"/></div>
+              <div class="card-info">  
+                  <h3 class="card-title">Норвежский</h3>  
+                  <div class="all-courses-card-details">    
+                      <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Уже изучают : 14.333</div>
+                  </div>   
+              </div> 
+        </div>
+      </div>
+      <div class="all-courses-cards">
+        <div class="all-courses-card">
+          <div class="card-image"><img src="../img/l7.svg"/></div>
+              <div class="card-info">  
+                  <h3 class="card-title">Корейский</h3>  
+                  <div class="all-courses-card-details">    
+                      <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Уже изучают : 56.223</div>
+                  </div>   
+              </div> 
+        </div>
+        <div class="all-courses-card">
+          <div class="card-image"><img src="../img/l8.svg"/></div>
+              <div class="card-info">  
+                  <h3 class="card-title">Японский</h3>  
+                  <div class="all-courses-card-details">    
+                      <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Уже изучают : 42.026</div>
+                  </div>   
+              </div> 
+        </div>
+        <div class="all-courses-card">
+          <div class="card-image"><img src="../img/l9.svg"/></div>
+              <div class="card-info">  
+                  <h3 class="card-title">Китайский</h3>  
+                  <div class="all-courses-card-details">    
+                      <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Уже изучают : 112.003</div>
+                  </div>   
+              </div> 
+        </div>
+      </div>
+  </div>
+
+
+
+
+  <div class="footer">
+    <div class="column1">
+      <div class="footer-title1">Языковая школа “POLYGLOT”</div>
+      <div class="footer-text1">
+        Мы — команда профессиональных преподавателей, которая поможет вам овладеть иностранным языком в комфортной и дружелюбной атмосфере. Наша школа предлагает индивидуальные и групповые занятия для студентов всех уровней.
+      </div>
+      <div class="social">
+        <div class="email-num">polyglot@gmail.com</div>
+        <div class="email-num">+7 (800) 555 35 35</div>
+      </div>
+      <div class="social-img">
+        <img src="../img/sn1.svg" alt="telegram">
+        <img src="../img/sn2.svg" alt="vk">
+        <img src="../img/sn3.svg" alt="pint">
+        <img src="../img/sn4.svg" alt="skype">
+      </div>
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Курсы</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для детей</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для подростков</div>  
+        </div>  
+        <div class="footer-item active">  
+            <img src="../img/footer-icon-orange.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Смешанные группы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для взрослых</div>  
+        </div>  
+    </div>  
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Важная информация</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Часто задаваемые вопросы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Поддержка</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вебинары</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вакансии</div>  
+        </div>  
+    </div>  
+    </div>
+    
+  </div>
+
+ 
+      
+
+</body>
+</html>

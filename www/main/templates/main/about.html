@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polyglot — Языковая онлайн-школа</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li class="active"><a href="mainpage.html">Главная</a></li>
+          <li><a href="about.html">О платформе</a></li>
+          <li><a href="all-courses.html">Курсы</a></li>
+          <li><a href="support.html">Поддержка</a></li>
+          <li><a href="profile.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="icon-user">
+          <a href="registration.html">  
+            <img src="../img/person.svg" alt="iconperson">
+          </a>
+        </div>
+        <div class="lang-switcher">
+          <span class="lang-option" id="current-lang">RU</span>  
+          <img src="../img/arrow-down.svg" alt="Стрелка" class="arrow-icon" id="toggle-options">
+          <div class="lang-options" id="lang-options">  
+            <span class="lang-option" data-lang="ru">RU</span>  
+            <span class="lang-option" data-lang="en">EN</span>  
+          </div> 
+        </div>
+        <script src="header.js"></script> 
+      </div>
+      <div class="burger" id="burger">
+        <img src="../img/burger.svg" alt="Меню">
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burger = document.getElementById('burger');
+          const nav = document.getElementById('main-nav');
+      
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+          });
+        });
+      </script>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="banner-left">
+      <div class="title-banner">Язык – ключ к новым возможностям. <br> Начните учиться сегодня!</div>
+      <button type="button" name="button-banner" class="button-banner">
+        <div class="btn-text">Записаться</div>
+        <img src="../img/icon-button.svg" alt="icon-button" width="16" height="27">
+      </button>
+      </div>
+    <div class="banner-right">
+      <img src="../img/banner-right.svg" alt="icon-button">
+    </div>
+  </div>
+
+
+  <div class="about-platform">
+    <div class="about-platform-title">О платформе</div>
+    <div class="about-platform-l-r">
+      <div class="about-platform-left">
+        <div class="about-platform-text">
+          <div class="about-platform-texts">
+            <span class="main">
+                В нашей языковой школе мы используем современную онлайн-платформу, которая делает процесс изучения языков удобным 
+и доступным для каждого студента. Платформа предлагает ряд уникальных функций:<br>
+            </span>
+            <span class="semibold">
+            Интерактивные Уроки:<br>
+            </span>
+            <span class="main">
+                Наши занятия обладают интерактивными элементами, позволяя вам закреплять знания через практику.
+            </span>
+            <span class="semibold">
+              <br>Доступ к Ресурсам:<br>
+            </span>
+            <span class="main">
+                Студенты получают доступ к обширной библиотеке материалов, включая видео, текстовые документы и упражнения.
+            </span>
+            <span class="semibold">
+              <br>Удобный График:<br>
+            </span>
+            <span class="main">
+                Занятия проводятся в удобное для вас время, что позволяет легко совмещать обучение с другими обязательствами.
+            </span>
+            <span class="semibold">
+              <br>Обратная Связь:<br>
+            </span>
+            <span class="main">
+                Преподаватели регулярно предоставляют обратную связь и поддержку, что помогает вам отслеживать свой прогресс.
+            </span>
+            <span class="semibold">
+              <br>Сообщество: <br>
+            </span>
+            <span class="main">
+                Вы можете общаться с другими студентами, участвовать в обсуждениях и культурных обменах, что способствует развитию языковых навыков.
+            </span>
+          </div>
+        </div>
+        </div>
+      <div class="about-platform-right">
+        <img src="../img/about-platform-left.svg"/>
+      </div>
+    </div>  
+  </div>
+
+  <div class="teachers">
+    <div class="teachers-title">Наши преподаватели</div>
+    <div class="teachers-cards">
+        <div class="teacher-card">
+          <img class="teacher-photo" src="../img/teacher1.svg" alt="Анна Иванова" />
+          <div class="teacher-info">
+            <div class="teacher-name">Анна Иванова</div>
+            <div class="teacher-description">
+              <p><span class="label">Специализация:</span> Английский язык</p>
+              <p><span class="label">Образование:</span> Магистр филологии, Московский государственный университет</p>
+              <p><span class="label">Опыт:</span> 8 лет преподавания как в России, так и за границей</p>
+              <p><span class="label">Методика:</span> Использует коммуникативный подход и современные технологии обучения</p>
+              <p><span class="label">Интересы:</span> Анна увлекается путешествиями и культурой англоязычных стран, что делает её уроки особенно увлекательными и информативными.</p>
+            </div>
+          </div>
+        </div>
+        <div class="teacher-card">
+          <img class="teacher-photo" src="../img/teacher2.svg" alt="Сергей Смирнов" />
+          <div class="teacher-info">
+            <div class="teacher-name">Сергей Смирнов</div>
+            <div class="teacher-description">
+              <p><span class="label">Специализация:</span> Немецкий язык</p>
+              <p><span class="label">Образование:</span> Бакалавр международных отношений, Санкт-Петербургский государственный университет</p>
+              <p><span class="label">Опыт:</span> 5 лет преподавания, включая опыт работы в языковых школах Германии</p>
+              <p><span class="label">Методика:</span> Применяет проектный метод, который помогает студентам изучать язык через практические задачи и взаимосвязь с реальными ситуациями.</p>
+              <p><span class="label">Интересы:</span> Сергей интересуется немецкой литературой и кино, и всегда рад делиться советами по актуальным фильмам и книгам.</p>
+            </div>
+          </div>
+        </div>
+        <div class="teacher-card">
+          <img class="teacher-photo" src="../img/teacher3.svg" alt="Елена Петрова" />
+          <div class="teacher-info">
+            <div class="teacher-name">Елена Петрова</div>
+            <div class="teacher-description">
+              <p><span class="label">Специализация:</span> Испанский язык</p>
+              <p><span class="label">Образование:</span> Магистр испанского языка и литературы, Ростовский государственный университет</p>
+              <p><span class="label">Опыт:</span> Более 10 лет опыта, включая преподавание в Испании</p>
+              <p><span class="label">Методика:</span> Использует метод погружения, что позволяет студентам быстрее адаптироваться к языковой среде.</p>
+              <p><span class="label">Интересы:</span> Елена активно участвует в культурных обменах и любит готовить испанские блюда, которые часто становятся темой для обсуждения на её уроках.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="partners">
+    <div class="partners-title">Наши партнеры</div>
+    <div class="partners-l-r">
+      <div class="partners-left">
+        <div class="partners-text">
+          <div class="partners-texts">
+            <span class="main">
+              Мы гордимся тем, что сотрудничаем с рядом известных организаций и учреждений, чтобы предоставить нашим студентам максимальные возможности для обучения и культурного обмена. Наши партнеры помогают нам улучшать качество образования 
+              и развивать программу курсов.<br>
+            </span>
+            <span class="semibold20">
+              <br>Образовательные Партнеры<br>
+            </span>
+            <span class="semibold">
+              <br>Международный Языковой Центр:<br>
+            </span>
+            <span class="main">
+              Мы сотрудничаем с Международным Языковым Центром, который предлагает дополнительные курсы и семинары по языкам. 
+              Это партнерство позволяет нашим студентам получать дополнительные ресурсы и участвовать в обменах с носителями языка.<br>
+            </span>
+            <span class="semibold">
+              <br>Культурный Центр Италии<br>
+            </span>
+            <span class="main">
+              Культурный Центр Италии предоставляет нашим студентам доступ к культурным событиям и языковым мастерским. Мы организуем совместные мероприятия, которые позволяют погрузиться 
+              в итальянскую культуру и язык.
+            </span>
+          </div>
+        </div>
+        </div>
+      <div class="partners-right">
+        <img src="../img/partner1.svg"/>
+      </div>
+    </div>  
+    <div class="partners-down">
+      <div class="partners-down-left">
+        <img src="../img/partner2.svg"/>
+      </div>
+      <div class="partners-down-right">
+        <div class="partners-down-text">
+          <div class="partners-down-texts">
+            <span class="semibold20">
+              Языковые Курсы за Границей<br>
+            </span>
+            <span class="semibold">
+              World Language Institute<br>
+            </span>
+            <span class="main">
+              Партнерство с World Language Institute дает нашим студентам возможность пройти летние курсы в зарубежных языковых школах. 
+Это уникальная возможность практиковать язык 
+в естественной среде, погружаясь в культуру другой страны.<br>
+            </span>
+            <span class="semibold20">
+              <br>Партнеры в Области Культурных Обменов<br>
+            </span>
+            <span class="semibold">
+              Cultural Exchange Network<br>
+            </span>
+            <span class="main">
+              Наше сотрудничество с Cultural Exchange Network позволяет организовать культурные мероприятия и языковые обмены, которые обогащают опыт наших студентов и помогают им лучше понять различные культуры.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="column1">
+      <div class="footer-title1">Языковая школа “POLYGLOT”</div>
+      <div class="footer-text1">
+        Мы — команда профессиональных преподавателей, которая поможет вам овладеть иностранным языком в комфортной и дружелюбной атмосфере. Наша школа предлагает индивидуальные и групповые занятия для студентов всех уровней.
+      </div>
+      <div class="social">
+        <div class="email-num">polyglot@gmail.com</div>
+        <div class="email-num">+7 (800) 555 35 35</div>
+      </div>
+      <div class="social-img">
+        <img src="../img/sn1.svg" alt="telegram">
+        <img src="../img/sn2.svg" alt="vk">
+        <img src="../img/sn3.svg" alt="pint">
+        <img src="../img/sn4.svg" alt="skype">
+      </div>
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Курсы</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для детей</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для подростков</div>  
+        </div>  
+        <div class="footer-item active">  
+            <img src="../img/footer-icon-orange.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Смешанные группы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для взрослых</div>  
+        </div>  
+    </div>  
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Важная информация</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Часто задаваемые вопросы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Поддержка</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вебинары</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вакансии</div>  
+        </div>  
+    </div>  
+    </div>
+    
+  </div>
+
+ 
+      
+
+</body>
+</html>

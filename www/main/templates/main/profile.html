@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polyglot — Языковая онлайн-школа</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="profile">
+  
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li class="active"><a href="mainpage.html">Главная</a></li>
+          <li><a href="about.html">О платформе</a></li>
+          <li><a href="all-courses.html">Курсы</a></li>
+          <li><a href="support.html">Поддержка</a></li>
+          <li><a href="profile.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="icon-user">
+          <a href="registration.html">  
+            <img src="../img/person.svg" alt="iconperson">
+          </a>
+        </div>
+        <div class="lang-switcher">
+          <span class="lang-option" id="current-lang">RU</span>  
+          <img src="../img/arrow-down.svg" alt="Стрелка" class="arrow-icon" id="toggle-options">
+          <div class="lang-options" id="lang-options">  
+            <span class="lang-option" data-lang="ru">RU</span>  
+            <span class="lang-option" data-lang="en">EN</span>  
+          </div> 
+        </div>
+        <script src="header.js"></script> 
+      </div>
+      <div class="burger" id="burger">
+        <img src="../img/burger.svg" alt="Меню">
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burger = document.getElementById('burger');
+          const nav = document.getElementById('main-nav');
+      
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+          });
+        });
+      </script>
+    </div>
+  </header>
+  
+  
+
+  <div class="dashboard">
+    <aside class="sidebar">
+        <div class="profile-container">
+            <div class="sidebar">
+              <div class="user-info">
+                <div class="avatar">
+                  <img src="../img/avatar.svg" alt="User Photo"/>
+                </div>
+                <div class="edit-icon">
+                <img src="../img/edit-icon.svg" alt="User Photo"/>
+                </div>
+                <div class="user-text">
+                  <div class="username">Мария Иванова</div>
+                  <div class="location">
+                    <div class="icon">
+                        <img src="../img/avatar-location.svg"/>
+                    </div>
+                    <span class="country">Россия</span>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-title">Меню</div>
+              <div class="menu">
+                <div class="menu-item active">
+                    <div class="icon">
+                        <img src="../img/menu-icon1.svg"/>
+                    </div>
+                  <span>Мой профиль</span>
+                </div>
+                <a href="profile2.html" class="menu-item">
+                  <div class="icon">
+                    <img src="../img/menu-icon2.svg" alt="Мои курсы" />
+                  </div>
+                  <span>Мои курсы</span>
+                </a>
+                <div class="menu-item">
+                    <div class="icon">
+                        <img src="../img/menu-icon3.svg"/>
+                    </div>
+                  <span>Настройки</span>
+                </div>
+              </div>
+              <div class="menu-picture">
+                <img src="../img/menu-picture.svg"/>
+            </div>
+            </div>
+          </div>
+    </aside>
+
+    
+    <main class="profile-content">
+      <div class="greeting-block">
+        <div class="progress-info">
+          <div class="progress-text">
+            <h1 class="greeting-title">Добрый вечер, Мария!</h1>
+            <p class="greeting-subtitle">
+              На этой неделе вы освоили 70% своей цели!<br />
+              Продолжайте в том же духе и совершенствуйте свой профессионализм.
+            </p>
+          </div>
+          <div class="progress-circle">
+            <div class="circle">
+              <span class="percent">70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calendar-and-achievements">
+        <div class="calendar-and-achievements-left-column">
+          <div class="calendar-container">
+            <div class="calendar-header">
+              <div class="title">Мой прогресс</div>
+              <div class="month">Январь 2025
+                <img src="../img/month-arrow.svg"/>
+              </div>
+            </div>
+        
+            <div class="calendar-grid day-names">
+              <div>ПН</div><div>ВТ</div><div>СР</div><div>ЧТ</div><div>ПТ</div><div>СБ</div><div>ВС</div>
+            </div>
+        
+            <div class="calendar-grid">
+              <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+              <div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div>
+        
+              <div class="day">5</div><div class="day">6</div><div class="day">7</div>
+              <div class="day blue">8</div><div class="day">9</div><div class="day">10</div><div class="day green">11</div>
+        
+              <div class="day">12</div><div class="day red">13</div><div class="day">14</div>
+              <div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div>
+        
+              <div class="day">19</div><div class="day">20</div><div class="day">21</div>
+              <div class="day">22</div><div class="day yellow">23</div><div class="day">24</div><div class="day">25</div>
+        
+              <div class="day">26</div><div class="day">27</div><div class="day">28</div>
+              <div class="day pink">29</div><div class="day">30</div><div class="day">31</div><div class="day empty"></div>
+            </div>
+          </div>
+
+
+          <div class="word-progress-container">
+            <svg width="200" height="200" viewBox="0 0 200 200" style="position: absolute;">
+            <circle cx="100" cy="100" r="90" stroke="#FF9500" stroke-width="6" fill="none"
+                    stroke-dasharray="875.48"
+                    stroke-dashoffset="384"
+                    stroke-linecap="round"
+                    transform="rotate(-270 100 100)"/>
+            </svg>
+
+            <div class="center-percentage">32%</div>
+            <div class="language-label">Английский</div>
+
+            <div class="words-info">Выучено слов: <span>143</span></div>
+            <div class="remaining-words">Осталось: <span>105</span></div>
+
+            <div class="level-dot level-a1">A1</div>
+            <div class="level-dot level-a2">A2</div>
+            <div class="level-dot level-b1">B1</div>
+            <div class="level-dot level-b2">B2</div>
+            <div class="level-dot level-c1">C1</div>
+          </div>
+  
+        </div>
+        
+
+        <div class="achievements-container">
+          <h2 class="achievements-title">Достижения</h2>
+      
+          <div class="achievement">
+            <img src="../img/achiv-icon1.svg" alt="icon" class="achievement-icon" />
+            <div class="achievement-text">
+              <div class="title">Начинающий полиглот</div>
+              <div class="desc">Получено за прохождение первых 10 уровней курса по иностранному языку.</div>
+            </div>
+          </div>
+      
+          <div class="achievement">
+            <img src="../img/achiv-icon2.svg" alt="icon" class="achievement-icon" />
+            <div class="achievement-text">
+              <div class="title">Словарный мастер</div>
+              <div class="desc">Награда за изучение 500 новых слов на выбранном языке.</div>
+            </div>
+          </div>
+      
+          <div class="achievement">
+            <img src="../img/achiv-icon3.svg" alt="icon" class="achievement-icon" />
+            <div class="achievement-text">
+              <div class="title">Полный курс</div>
+              <div class="desc">Награда за завершение всего курса обучения по английскому языку.</div>
+            </div>
+          </div>
+      
+          <div class="achievement">
+            <img src="../img/achiv-icon4.svg" alt="icon" class="achievement-icon" />
+            <div class="achievement-text">
+              <div class="title">Идеальный акцент</div>
+              <div class="desc">Достижение, полученное за высокую оценку в устном экзамене.</div>
+            </div>
+          </div>
+      
+          <div class="achievement">
+            <img src="../img/achiv-icon5.svg" alt="icon" class="achievement-icon" />
+            <div class="achievement-text">
+              <div class="title">Дебатный чемпион</div>
+              <div class="desc">Получено за победу на дебатах или языковых соревнованиях.</div>
+            </div>
+          </div>
+      
+          <div class="achievement">
+            <img src="../img/achiv-icon6.svg" alt="icon" class="achievement-icon" />
+            <div class="achievement-text">
+              <div class="title">Блиц-ученик</div>
+              <div class="desc">Получено за ускоренное изучение языка, завершив курс за рекордное время.</div>
+            </div>
+          </div>
+      
+          <div class="achievement">
+            <img src="../img/achiv-icon7.svg" alt="icon" class="achievement-icon" />
+            <div class="achievement-text">
+              <div class="title">Наставник</div>
+              <div class="desc">Достижение за помощь другим ученикам в изучении языка.</div>
+            </div>
+          </div>
+        </div>
+      
+        
+      </div>
+      <div class="tracker-container">
+        <div class="tracker-title">Занятия</div>
+        <div class="tracker">
+          <div class="tracker-checkmarks">
+            <div class="tracker-day" data-day="1"></div>
+            <div class="tracker-day" data-day="2"></div>
+            <div class="tracker-day" data-day="3"></div>
+            <div class="tracker-day" data-day="4"></div>
+            <div class="tracker-day" data-day="5"></div>
+            <div class="tracker-day" data-day="6"></div>
+            <div class="tracker-day" data-day="7"></div>
+          </div>
+          <div class="tracker-week-labels">
+            <div class="tracker-day-label-container"><div class="tracker-day-label">ПН</div></div>
+            <div class="tracker-day-label-container"><div class="tracker-day-label">ВТ</div></div>
+            <div class="tracker-day-label-container"><div class="tracker-day-label">СР</div></div>
+            <div class="tracker-day-label-container"><div class="tracker-day-label">ЧТ</div></div>
+            <div class="tracker-day-label-container"><div class="tracker-day-label">ПТ</div></div>
+            <div class="tracker-day-label-container"><div class="tracker-day-label">СБ</div></div>
+            <div class="tracker-day-label-container"><div class="tracker-day-label">ВС</div></div>
+          </div>
+          
+        </div>
+        
+        
+      </div>
+      <script>
+        const trackerDays = document.querySelectorAll('.tracker-day');
+      
+        trackerDays.forEach(day => {
+          day.addEventListener('click', () => {
+            day.classList.toggle('selected'); 
+          });
+        });
+      </script>
+    </main>
+
+    
+  </div>
+
+
+</body>
+</html>

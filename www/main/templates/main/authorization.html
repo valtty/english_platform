@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polyglot — Языковая онлайн-школа</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li class="active"><a href="mainpage.html">Главная</a></li>
+          <li><a href="about.html">О платформе</a></li>
+          <li><a href="all-courses.html">Курсы</a></li>
+          <li><a href="support.html">Поддержка</a></li>
+          <li><a href="profile.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="icon-user">
+          <a href="registration.html">  
+            <img src="../img/person.svg" alt="iconperson">
+          </a>
+        </div>
+        <div class="lang-switcher">
+          <span class="lang-option" id="current-lang">RU</span>  
+          <img src="../img/arrow-down.svg" alt="Стрелка" class="arrow-icon" id="toggle-options">
+          <div class="lang-options" id="lang-options">  
+            <span class="lang-option" data-lang="ru">RU</span>  
+            <span class="lang-option" data-lang="en">EN</span>  
+          </div> 
+        </div>
+        <script src="header.js"></script> 
+      </div>
+      <div class="burger" id="burger">
+        <img src="../img/burger.svg" alt="Меню">
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burger = document.getElementById('burger');
+          const nav = document.getElementById('main-nav');
+      
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+          });
+        });
+      </script>
+    </div>
+  </header>
+
+  <div class="authorization">
+    <div class="authorization-container">
+        <h2 class="title">Авторизация</h2>
+        <form class="form">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="polyglot@gmail.com" />
+    
+          <label for="password">Пароль</label>
+          <input type="password" id="password" placeholder="••••••••" />
+    
+          <button type="submit">Войти</button>
+        </form>
+    
+        <div class="login-link">
+          Забыли пароль? <a href="#">Восстановить</a>
+        </div>
+      </div>
+  </div>
+  
+
+  <div class="footer">
+    <div class="column1">
+      <div class="footer-title1">Языковая школа “POLYGLOT”</div>
+      <div class="footer-text1">
+        Мы — команда профессиональных преподавателей, которая поможет вам овладеть иностранным языком в комфортной и дружелюбной атмосфере. Наша школа предлагает индивидуальные и групповые занятия для студентов всех уровней.
+      </div>
+      <div class="social">
+        <div class="email-num">polyglot@gmail.com</div>
+        <div class="email-num">+7 (800) 555 35 35</div>
+      </div>
+      <div class="social-img">
+        <img src="../img/sn1.svg" alt="telegram">
+        <img src="../img/sn2.svg" alt="vk">
+        <img src="../img/sn3.svg" alt="pint">
+        <img src="../img/sn4.svg" alt="skype">
+      </div>
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Курсы</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для детей</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для подростков</div>  
+        </div>  
+        <div class="footer-item active">  
+            <img src="../img/footer-icon-orange.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Смешанные группы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для взрослых</div>  
+        </div>  
+    </div>  
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Важная информация</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Часто задаваемые вопросы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Поддержка</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вебинары</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вакансии</div>  
+        </div>  
+    </div>  
+    </div>
+    
+  </div>
+
+ 
+      
+
+</body>
+</html>

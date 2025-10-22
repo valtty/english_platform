@@ -1,0 +1,380 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polyglot — Языковая онлайн-школа</title>
+  <link rel="stylesheet" href="{% static 'css\style.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li class="active"><a href="mainpage.html">Главная</a></li>
+          <li><a href="about.html">О платформе</a></li>
+          <li><a href="all-courses.html">Курсы</a></li>
+          <li><a href="support.html">Поддержка</a></li>
+          <li><a href="profile.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="icon-user">
+          <a href="registration.html">  
+            <img src="../img/person.svg" alt="iconperson">
+          </a>
+        </div>
+        <div class="lang-switcher">
+          <span class="lang-option" id="current-lang">RU</span>  
+          <img src="../img/arrow-down.svg" alt="Стрелка" class="arrow-icon" id="toggle-options">
+          <div class="lang-options" id="lang-options">  
+            <span class="lang-option" data-lang="ru">RU</span>  
+            <span class="lang-option" data-lang="en">EN</span>  
+          </div> 
+        </div>
+        <script src="header.js"></script> 
+      </div>
+      <div class="burger" id="burger">
+        <img src="../img/burger.svg" alt="Меню">
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burger = document.getElementById('burger');
+          const nav = document.getElementById('main-nav');
+      
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+          });
+        });
+      </script>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="banner-left">
+      <div class="title-banner">Язык – ключ к новым возможностям. <br> Начните учиться сегодня!</div>
+      <button type="button" name="button-banner" class="button-banner">
+        <div class="btn-text">Записаться</div>
+        <img src="../img/icon-button.svg" alt="icon-button" width="16" height="27">
+      </button>
+      </div>
+    <div class="banner-right">
+      <img src="../img/banner-right.svg" alt="icon-button">
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="about-left">
+      <img src="../img/about-left.svg"/>
+    </div>
+    <div class="about-right">
+      <div class="about-text">
+        <div class="about-title">О нас</div>
+        <div class="about-texts">
+          <span class="main">
+            Добро пожаловать в нашу онлайн языковую школу! Мы верим, что знание языка — это не просто навык, а ключ к новым возможностям и межкультурному общению. Наша цель — помочь вам уверенно овладеть иностранным языком в комфортной и поддерживающей среде.
+<br>Мы предлагаем:<br>
+          </span>
+          <span class="semibold">
+            Эффективные занятия 24/7
+          </span>
+          <span class="main">
+             — учитесь в удобное для вас время,не отрываясь от своих дел.<br>
+          </span>
+          <span class="semibold">
+            Мини-группы и индивидуальное обучение
+          </span>
+          <span class="main">
+             — адаптированные программы с учетом ваших потребностей и целей.<br>
+          </span>
+          <span class="semibold">
+            Опытные преподаватели
+          </span>
+          <span class="main">
+             — наша команда состоит из профессионалов, которые любят свое дело и готовы делиться знаниями.<br>
+          </span>
+          <span class="semibold">
+            Бесплатная пробная неделя
+          </span>
+          <span class="main">
+            — попробуйте наши занятия без обязательств и почувствуйте разницу!<br>С нами вы сможете не только изучить язык, но и погрузиться 
+            в культуру, практиковать разговорную речь и развивать уверенность в себе. Присоединяйтесь к нашему сообществу 
+            и начинайте свое путешествие в мир языков сегодня!
+          </span>
+        </div>
+      </div>
+      <a href="about.html" class="button-about">
+        <div class="btn-text-about">Узнать больше</div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="popular-courses">
+    <div class="courses-title">Популярные курсы</div>
+    <div class="courses-cards">
+      <div class="courses-card">
+        <div class="card-image"><img src="../img/course-card1.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Английский</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 72</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 7,5к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> Advanced</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" class="card-btn-text-img">
+                </button>  
+            </div> 
+      </div>
+      <div class="courses-card">
+        <div class="card-image"><img src="../img/course-card2.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Немецкий</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 112</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 3к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> Beginner</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" class="card-btn-text-img">
+                </button>  
+            </div> 
+      </div>
+      <div class="courses-card">
+        <div class="card-image"><img src="../img/course-card3.svg"/></div>
+            <div class="card-info">  
+                <h3 class="card-title">Испанский</h3>  
+                <div class="card-details">  
+                    <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 92</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 4,2к</div>
+                    <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> Advanced</div>
+                </div>  
+                <button class="card-button">
+                  <div class="card-btn-text">Начать курс</div>
+                  <img src="../img/icon-button.svg" class="card-btn-text-img">
+                </button>  
+            </div> 
+      </div>
+    </div>
+  </div>
+  
+  <div class="metodiki">
+    <div class="metodiki-title">Методики обучения</div>
+    <div class="metodiki-l-r">
+      <div class="metodiki-left">
+        <div class="metodiki-text">
+          <div class="metodiki-texts">
+            <span class="semibold">
+              1. Коммуникативная методика<br>
+            </span>
+            <span class="main">
+              Фокус на практическом использовании языка через диалоги и ролевые игры. Помогает развивать навыки общения.
+            </span>
+            <span class="semibold">
+              <br>2. Правильный подход<br>
+            </span>
+            <span class="main">
+              Обучение грамматике и лексике в контексте. Используются тексты и видео, что делает процесс интерактивным и увлекательным.
+            </span>
+            <span class="semibold">
+              <br>3. Интерактивное обучение<br>
+            </span>
+            <span class="main">
+              Использование технологий и онлайн-платформ. Уроки включают геймификацию и видеозвонки, позволяя учиться в удобное время.
+            </span>
+            <span class="semibold">
+              <br>4. Полное погружение<br>
+            </span>
+            <span class="main">
+              Окружение учащихся языком через культуру и обычаи носителей. Включает экскурсии и культурные мероприятия.
+            </span>
+            <span class="semibold">
+              <br>5. Индивидуальный подход<br>
+            </span>
+            <span class="main">
+              Программы адаптируются под потребности и цели каждого ученика, что обеспечивает максимальные результаты.
+            </span>
+          </div>
+        </div>
+        <a href="metodiki.html" class="button-faq">
+          <div class="btn-text-faq">Подробнее</div>
+        </a>
+      </div>
+      <div class="metodiki-right">
+        <img src="../img/metodiki-left.svg"/>
+      </div>
+    </div>  
+  </div>
+
+  <div class="reviews">  
+    <h1 class="reviews-title">Отзывы</h1>  
+    <div class="reviews-container">  
+        <div class="reviews-left">  
+          <div class="review-wrapper">
+            <div class="review-card">  
+              <img class="review-image" src="../img/review1.svg" alt="Отзыв" />
+              <div class="review-content">  
+                  <div class="rating">  
+                      <div class="stars">★★★★★</div>  
+                      <div class="rating-score">5.0</div>  
+                  </div>  
+                  <p class="review-text">„Языковая школа изменила мой подход к изучению. Интерактивные методики делают учебу увлекательной. Спасибо!“</p>  
+                  <div class="review-author">Мария, 27 лет</div>  
+              </div>  
+          </div>
+          </div>
+          <div class="review-wrapper">    
+            <div class="review-card">
+                <img class="review-image" src="../img/review2.svg" alt="Отзыв" />
+                <div class="review-content">  
+                    <div class="rating">  
+                        <div class="stars">★★★★★</div>  
+                        <div class="rating-score">5.0</div>  
+                    </div>  
+                    <p class="review-text">„Прекрасная школа! Занятия интересные и насыщенные. Преподаватели профессионалы своего дела. Рекомендую!”</p>  
+                    <div class="review-author">Анастасия, 24 года</div>  
+                </div>  
+                </div>  
+            </div>
+        </div>  
+
+        <div class="reviews-right">  
+            <div class="reviews-description">  
+                <p>На протяжении своего существования наша языковая школа помогла многим студентам достичь успехов в изучении иностранных языков. Мы стремимся создать комфортные условия для обучения и предоставить качественные образовательные услуги.<br>Вот что говорят наши студенты о своих впечатлениях:</p>  
+            </div> 
+            <div class="review-wrapper">
+              <div class="review-card">  
+                <img class="review-image" src="../img/review3.svg" alt="Отзыв" />
+                  <div class="review-content">  
+                      <div class="rating">  
+                          <div class="stars">★★★★★</div>  
+                          <div class="rating-score">5.0</div>  
+                      </div>  
+                      <p class="review-text">„Внимательное отношение к ученикам и гибкий график занятий. Удобно и эффективно. Советуем всем, кто хочет быстро научиться языку!”</p>  
+                      <div class="review-author">Дмитрий, 22 года</div>  
+                  </div>  
+              </div>
+            </div> 
+              
+        </div>  
+    </div>  
+  </div>  
+
+  <div class="faq-container">
+    <div class="fac-title">Часто задаваемые вопросы (FAQ)</div>
+    <details>
+      <summary>Как выбрать подходящий курс?</summary>
+      <p>При выборе курса учитывайте свои цели, уровень знания языка и предпочтительный формат обучения. Мы предлагаем консультации, чтобы помочь вам определиться.</p>
+    </details>
+    <details>
+      <summary>С каких уровней начинается обучение?</summary>
+      <p>Наши курсы начинаются с уровня начинающего (A1) и до продвинутого (C2). Мы также проводим тестирование для определения вашего текущего уровня.</p>
+    </details>
+    <details>
+      <summary>Какова продолжительность курсов?</summary>
+      <p>Продолжительность курсов варьируется в зависимости от программы и может составлять от 1 месяца до нескольких семестров. Более детальную информацию можно получить у нашего менеджера.</p>
+    </details>
+    <details>
+      <summary>Есть ли возможность обучения онлайн?</summary>
+      <p>Да, мы предлагаем онлайн-курсы с использованием современных технологий, что позволяет учиться из любой точки мира.</p>
+    </details>
+    <details>
+      <summary>Как проходит оплата за обучение?</summary>
+      <p>Оплата может быть произведена несколькими способами: наличными, банковским переводом или через онлайн-платежи.</p>
+    </details>
+    <details>
+      <summary>Можно ли записаться на бесплатный пробный урок?</summary>
+      <p>Да, мы предлагаем бесплатный пробный урок. Запишитесь на него через сайт или свяжитесь с нами по телефону.</p>
+    </details>
+    <details>
+      <summary>Как часто проходят занятия?</summary>
+      <p>Занятия могут проходить как дважды в неделю, так и ежедневно, в зависимости от выбранного курса и вашей индивидуальной программы.</p>
+    </details>
+    <details>
+      <summary>Есть ли скидки для групповых занятий?</summary>
+      <p>Да, мы предоставляем скидки на групповые занятия. Уточните условия у нашего консультанта.</p>
+    </details>
+    <a href="support.html" class="button-faq">
+      <div class="btn-text-faq">Поддержка</div>
+    </a>
+  </div>
+
+  <div class="footer">
+    <div class="column1">
+      <div class="footer-title1">Языковая школа “POLYGLOT”</div>
+      <div class="footer-text1">
+        Мы — команда профессиональных преподавателей, которая поможет вам овладеть иностранным языком в комфортной и дружелюбной атмосфере. Наша школа предлагает индивидуальные и групповые занятия для студентов всех уровней.
+      </div>
+      <div class="social">
+        <div class="email-num">polyglot@gmail.com</div>
+        <div class="email-num">+7 (800) 555 35 35</div>
+      </div>
+      <div class="social-img">
+        <img src="../img/sn1.svg" alt="telegram">
+        <img src="../img/sn2.svg" alt="vk">
+        <img src="../img/sn3.svg" alt="pint">
+        <img src="../img/sn4.svg" alt="skype">
+      </div>
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Курсы</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для детей</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для подростков</div>  
+        </div>  
+        <div class="footer-item active">  
+            <img src="../img/footer-icon-orange.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Смешанные группы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Для взрослых</div>  
+        </div>  
+    </div>  
+    </div>
+    <div class="column2">
+      <div class="footer-title1">Важная информация</div>
+      <div class="footer-list">  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Часто задаваемые вопросы</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Поддержка</div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name1">
+              <a href="resources.html">Вебинары</a>
+            </div>  
+        </div>  
+        <div class="footer-item">  
+            <img src="../img/footer-icon-white.svg" alt="Arrow" class="arrow"/>
+            <div class="footer-name">Вакансии</div>  
+        </div>  
+    </div>  
+    </div>
+    
+  </div>
+
+ 
+      
+
+</body>
+</html>

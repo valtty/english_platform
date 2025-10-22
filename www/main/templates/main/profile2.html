@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polyglot — Языковая онлайн-школа</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="profile">
+  
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li class="active"><a href="mainpage.html">Главная</a></li>
+          <li><a href="about.html">О платформе</a></li>
+          <li><a href="all-courses.html">Курсы</a></li>
+          <li><a href="support.html">Поддержка</a></li>
+          <li><a href="profile.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="icon-user">
+          <a href="registration.html">  
+            <img src="../img/person.svg" alt="iconperson">
+          </a>
+        </div>
+        <div class="lang-switcher">
+          <span class="lang-option" id="current-lang">RU</span>  
+          <img src="../img/arrow-down.svg" alt="Стрелка" class="arrow-icon" id="toggle-options">
+          <div class="lang-options" id="lang-options">  
+            <span class="lang-option" data-lang="ru">RU</span>  
+            <span class="lang-option" data-lang="en">EN</span>  
+          </div> 
+        </div>
+        <script src="header.js"></script> 
+      </div>
+      <div class="burger" id="burger">
+        <img src="../img/burger.svg" alt="Меню">
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burger = document.getElementById('burger');
+          const nav = document.getElementById('main-nav');
+      
+          burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+          });
+        });
+      </script>
+    </div>
+  </header>
+  
+  
+
+  <div class="dashboard">
+    <aside class="sidebar">
+        <div class="profile-container2">
+            <div class="sidebar">
+              <div class="user-info">
+                <div class="avatar">
+                  <img src="../img/avatar.svg" alt="User Photo"/>
+                </div>
+                <div class="edit-icon">
+                <img src="../img/edit-icon.svg" alt="User Photo"/>
+                </div>
+                <div class="user-text">
+                  <div class="username">Мария Иванова</div>
+                  <div class="location">
+                    <div class="icon">
+                        <img src="../img/avatar-location.svg"/>
+                    </div>
+                    <span class="country">Россия</span>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-title">Меню</div>
+              <div class="menu">
+                <a href="profile.html" class="menu-item">
+                    <div class="icon">
+                      <img src="../img/menu-icon4.svg" alt="Мои курсы" />
+                    </div>
+                    <span>Мой профиль</span>
+                  </a>
+                <div class="menu-item active">
+                    <div class="icon">
+                        <img src="../img/menu-icon5.svg"/>
+                    </div>
+                  <span>Мои курсы</span>
+                </div>
+                <div class="menu-item">
+                    <div class="icon">
+                        <img src="../img/menu-icon3.svg"/>
+                    </div>
+                  <span>Настройки</span>
+                </div>
+              </div>
+              
+            
+            </div>
+        </div>
+    </aside>
+    <div class="courses-cards-profile">
+        <div class="english-courses-card1">
+            <div class="card-image"><img src="../img/eng3.svg"/></div>
+                <div class="card-info">  
+                    <h3 class="card-title">Общий английский (Продвинутый)</h3>  
+                    <div class="card-details">  
+                        <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 92</div>
+                        <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 27.8к</div>
+                        <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> С1-С2</div>
+                    </div>  
+                    <button class="card-button">
+                      <div class="card-btn-text">Начать курс</div>
+                      <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                    </button>  
+                </div> 
+          </div>
+          <div class="english-courses-card1">
+            <div class="card-image"><img src="../img/eng8.svg"/></div>
+                <div class="card-info">  
+                    <h3 class="card-title">Подготовка к университету</h3>  
+                    <div class="card-details">  
+                        <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 72</div>
+                        <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 7к</div>
+                        <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> В1-В2</div>
+                    </div>  
+                    <button class="card-button">
+                      <div class="card-btn-text">Начать курс</div>
+                      <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+                    </button>  
+                </div> 
+          </div>
+    </div>
+  </div>
+
+  <div class="profile-grid-container">
+
+    <div class="profile-course-card">
+      <img src="../img/profile-card-img1.svg" class="profile-course-img" alt="Учимся читать" />
+      <div class="profile-card-body">
+        <h3>Учимся читать</h3>
+        <div class="card-details1">  
+            <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 92</div>
+            <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 27.8к</div>
+            <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> С1-С2</div>
+        </div>  
+        <div class="profile-progress-wrapper">
+            <div class="profile-progress-bar">
+                <div class="profile-progress-track">
+                  <div class="profile-progress-fill" style="width: 67%"></div>
+                  <div class="profile-progress-thumb" style="left: 67%"></div>
+                  <div class="profile-progress-dashes"></div>
+                </div>
+            </div>
+            <div class="profile-progress-info">
+                <p>баллы: 67 / 100</p>
+                <p>дни: 56</p>
+              </div>
+          </div>
+        <button class="profile-btn">
+            <div class="profile-btn-text">Продолжить</div>
+            <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+        </button>
+      </div>
+    </div>
+  
+
+    <div class="profile-course-card">
+      <img src="../img/profile-card-img2.svg" class="profile-course-img" alt="Подготовка к DSH" />
+      <div class="profile-card-body">
+        <h3>Подготовка к DSH</h3>
+        <div class="card-details1">  
+            <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 92</div>
+            <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 27.8к</div>
+            <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> С1-С2</div>
+        </div>  
+        <div class="profile-progress-wrapper">
+            <div class="profile-progress-bar">
+                <div class="profile-progress-track">
+                  <div class="profile-progress-fill" style="width: 67%"></div>
+                  <div class="profile-progress-thumb" style="left: 67%"></div>
+                  <div class="profile-progress-dashes"></div>
+                </div>
+            </div>
+            <div class="profile-progress-info">
+                <p>баллы: 65 / 100</p>
+                <p>дни: 56</p>
+              </div>
+          </div>
+          <button class="profile-btn">
+            <div class="profile-btn-text">Продолжить</div>
+            <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+        </button>
+      </div>
+    </div>
+    <div class="profile-course-card">
+        <img src="../img/profile-card-img3.svg" class="profile-course-img" alt="Учимся читать" />
+        <div class="profile-card-body">
+          <h3>Travel испанский</h3>
+          <div class="card-details1">  
+              <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 42</div>
+              <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 98.8к</div>
+              <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> С1-С2</div>
+          </div>  
+          <div class="profile-progress-wrapper">
+              <div class="profile-progress-bar">
+                  <div class="profile-progress-track">
+                    <div class="profile-progress-fill" style="width: 67%"></div>
+                    <div class="profile-progress-thumb" style="left: 67%"></div>
+                    <div class="profile-progress-dashes"></div>
+                  </div>
+              </div>
+              <div class="profile-progress-info">
+                  <p>баллы: 67 / 100</p>
+                  <p>дни: 56</p>
+                </div>
+            </div>
+          <button class="profile-btn">
+              <div class="profile-btn-text">Продолжить</div>
+              <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+          </button>
+        </div>
+      </div>
+    
+  
+      <div class="profile-course-card">
+        <img src="../img/profile-card-img4.svg" class="profile-course-img" alt="Подготовка к DSH" />
+        <div class="profile-card-body">
+          <h3>Подготовка к университету</h3>
+          <div class="card-details1">  
+              <div class="detail"><span class="icon"><img src="../img/card-icon1.svg"/></span> Занятия: 92</div>
+              <div class="detail"><span class="icon"><img src="../img/card-icon2.svg"/></span> Ученики: 27.8к</div>
+              <div class="detail"><span class="icon"><img src="../img/card-icon3.svg"/></span> С1-С2</div>
+          </div>  
+          <div class="profile-progress-wrapper">
+              <div class="profile-progress-bar">
+                  <div class="profile-progress-track">
+                    <div class="profile-progress-fill" style="width: 67%"></div>
+                    <div class="profile-progress-thumb" style="left: 67%"></div>
+                    <div class="profile-progress-dashes"></div>
+                  </div>
+              </div>
+              <div class="profile-progress-info">
+                  <p>баллы: 65 / 100</p>
+                  <p>дни: 56</p>
+                </div>
+            </div>
+            <button class="profile-btn">
+              <div class="profile-btn-text">Продолжить</div>
+              <img src="../img/icon-button.svg" alt="icon-button" width="7" height="12">
+          </button>
+        </div>
+      </div>
+  </div>
+
+
+</body>
+</html>
